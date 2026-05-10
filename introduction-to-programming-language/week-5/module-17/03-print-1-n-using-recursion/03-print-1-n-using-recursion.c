@@ -1,20 +1,22 @@
 #include<stdio.h>
 
-void hello(int i) {
+void print_recursive(int n, int index) {
 
-  if(i == 11) {
+  if(index == n+1) {
     return;
   }
-
-  printf("%d\n", i);
-  hello(1+i);
-
+  
+  printf("%d\n", index);
+  print_recursive(n,index += 1);
 }
 
 int main() {
+  int n;
+  scanf("%d", &n);
 
-  int i = 1;
-  hello(i);
+  int idx = 1;
+
+  print_recursive(n, idx);
   
   return 0;
 }

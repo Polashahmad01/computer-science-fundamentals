@@ -1,14 +1,14 @@
 #include<stdio.h>
 
 void hello() {
-  printf("Hello");
+  printf("Hello\n");
   hello();
 }
 
 int main() {
 
-  printf("Hi");
+  printf("Hi\n");  
   hello();
-  
+
   return 0;
 }

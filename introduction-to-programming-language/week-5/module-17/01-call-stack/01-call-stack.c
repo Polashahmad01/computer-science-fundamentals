@@ -1,11 +1,11 @@
 #include<stdio.h>
 
 void mello() {
-  printf("Mello\n");
+  printf("mello\n");
 }
 
 void gello() {
-  printf("Gello\n");
+  printf("gello\n");
   mello();
 }
 
@@ -18,6 +18,6 @@ int main() {
 
   printf("Hi\n");
   hello();
-  
+
   return 0;
 }

@@ -1,19 +1,21 @@
 #include<stdio.h>
 
-void hello(int i) {
+void print_n_to_1(int n) {
 
-  if(i == 0) {
+  if(n == 0) {
     return;
   }
 
-  printf("%d\n", i);
-  hello(i - 1);
+  printf("%d\n", n);
 
+  print_n_to_1(n = n - 1);
 }
 
 int main() {
+  int n;
+  scanf("%d", &n);
 
-  hello(5);
+  print_n_to_1(n);
   
   return 0;
 }
